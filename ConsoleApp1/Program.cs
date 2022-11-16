@@ -14,11 +14,11 @@ namespace ConsoleApp1
             // nt kui on  alla 50 , siis tuleb console writeline vastus 
             if (numberConverted <= 50)
             {
-                Console.WriteLine("Number on alla 50");
+                Console.WriteLine("Number on väiksem kui 50");
             }
             else
             {
-                Console.WriteLine("Number on üle 50");
+                Console.WriteLine("Number on suurem kui 50");
             }
         }
     }
