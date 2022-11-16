@@ -12,7 +12,7 @@ namespace ConsoleApp1
 
             // teen siia if ja esli loogikaga vastused
             // nt kui on  alla 50 , siis tuleb console writeline vastus 
-            if ( numberConverted <= 50)
+            if (numberConverted <= 50)
             {
                 Console.WriteLine("Number on alla 50");
             }
