@@ -10,11 +10,11 @@ namespace ConsoleApp1
             string number = Console.ReadLine();
             int numberConverted = Convert.ToInt32(number);
 
-            // teen siia if ja esli loogikaga vastused
+            // teen siia if ja elsi loogikaga vastused
             // nt kui on  alla 50 , siis tuleb console writeline vastus 
             if (numberConverted <= 50)
             {
-                Console.WriteLine("Number on väiksem kui 50");
+                Console.WriteLine("Number on väiksem või võrdne kui 50");
             }
             else
             {
