@@ -6,9 +6,10 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            for (int i = 0; i < 10000; i++)
+            string a = "a";
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("abc");
+                Console.WriteLine(a=a+"a");
             }
         }
     }
