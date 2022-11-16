@@ -6,7 +6,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter your favorite football player t-shirt number!");
+            string number = Console.ReadLine();
+            int numberConverted = Convert.ToInt32(number);
+
+            // teen siia if ja esli loogikaga vastused
+            // nt kui on  alla 50 , siis tuleb console writeline vastus 
+            if ( numberConverted <= 50)
+            {
+                Console.WriteLine("Number on alla 50");
+            }
+            else
+            {
+                Console.WriteLine("Number on üle 50");
+            }
         }
     }
 }
