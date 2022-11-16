@@ -4,9 +4,15 @@ namespace ConsoleApp1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var a = 0;
+            while (a < 10000)
+            {
+                Console.WriteLine("abc");
+                a++;
+            }
+            
         }
     }
 }
