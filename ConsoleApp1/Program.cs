@@ -14,6 +14,12 @@ namespace ConsoleApp1
             states.Add("Sweden", "SWE");
 
             foreach (var state in states) Console.WriteLine($"{state.Key} - {state.Value}");
+
+            Console.WriteLine(states["Latvia"]);
+            Console.WriteLine(states["Estonia"]);
+
+            if (states.ContainsKey("Estonia")) Console.WriteLine(states["Estonia"]);
+            else Console.WriteLine("Ei ole riiki");
         }
     }
 }
