@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -6,7 +8,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var numbers = new Dictionary<int, string>()
+            {
+                {1,"One"},
+                {2,"Two"},
+                {3,"Three"},
+                {4,"Four"},
+            };
+            foreach (var number in numbers) Console.WriteLine($"{number.Key} - {number.Value}");
         }
     }
 }
