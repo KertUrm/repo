@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -6,7 +8,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var domains = new Dictionary<string, string>()
+            {
+                {"est","Estonia"},
+                {"lat","Latvia" },
+                {"fin","Finland" },
+                {"swe","Sweden" }
+            };
+            domains.ToList().ForEach(e => Console.WriteLine($"{e.Key} - {e.Value}"));
         }
     }
 }
