@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
@@ -6,7 +7,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var states = new Dictionary<string, String>();
+            states.Add("Estonia","EST");
+            states.Add("Latvia", "LAT");
+            states.Add("Finland", "FIN");
+            states.Add("Sweden", "SWE");
+
+            foreach (var state in states) Console.WriteLine($"{state.Key} - {state.Value}");
         }
     }
 }
