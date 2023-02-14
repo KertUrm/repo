@@ -6,7 +6,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cities = new Dictionary<string, String>()
+            {
+                {"Harju","Tallinn" },
+                {"Läänemaa","Haapsalu" },
+                {"Raplamaa","Rapla" },
+            };
+            cities.Remove("Harju");
+
+            if (cities.ContainsKey("Läänemaa")) cities.Remove("Läänemaa");
+
+            Console.WriteLine(cities.Count);
         }
     }
 }
