@@ -6,7 +6,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var tänavad = new Dictionary<string, string>()
+            {
+                {"Otepää","Jaani tänav"},
+                {"Tartu","Aasa tänav"},
+                {"Haapsalu","Ehte tänav"},
+                {"Narva","Männi tänav"}
+            };
+            foreach (var tänav in tänavad)
+            {
+                Console.WriteLine($"{tänav.Key} - {tänav.Value}");
+            }
         }
     }
 }
